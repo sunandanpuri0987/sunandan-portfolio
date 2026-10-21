@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './index.css'
+import './palette.css'
 
 const projects=[
- {id:'01',name:'Mockexa',kind:'AI INTERVIEW COACH',stack:'Swift · iOS · AI',desc:'An AI-powered iOS interview preparation experience that helps candidates build confidence before the real conversation.',url:'https://github.com/sunandanpuri0987/Mockexa',accent:'#9f7cff',visual:'phone'},
- {id:'02',name:'Salary Lens',kind:'DATA INTELLIGENCE',stack:'Python · ML · Streamlit',desc:'A data-analysis and prediction experience that turns employee salary data into clear, practical insights.',url:'https://github.com/sunandanpuri0987/Employee-Salary-Distribution-Analysis',accent:'#d8ff48',visual:'chart'},
- {id:'03',name:'Portfolio',kind:'FIGMA → REACT',stack:'React · CSS · Motion',desc:'A personal digital space designed around depth, movement and clean project storytelling.',url:'https://github.com/sunandanpuri0987/sunandan-portfolio',accent:'#ff905d',visual:'cube'}]
+ {id:'01',name:'Mockexa',kind:'AI INTERVIEW COACH',stack:'Swift · iOS · AI',desc:'An AI-powered iOS interview preparation experience that helps candidates build confidence before the real conversation.',url:'https://github.com/sunandanpuri0987/Mockexa',accent:'#8b5cf6',visual:'phone'},
+ {id:'02',name:'Salary Lens',kind:'DATA INTELLIGENCE',stack:'Python · ML · Streamlit',desc:'A data-analysis and prediction experience that turns employee salary data into clear, practical insights.',url:'https://github.com/sunandanpuri0987/Employee-Salary-Distribution-Analysis',accent:'#38bdf8',visual:'chart'},
+ {id:'03',name:'Portfolio',kind:'FIGMA → REACT',stack:'React · CSS · Motion',desc:'A personal digital space designed around depth, movement and clean project storytelling.',url:'https://github.com/sunandanpuri0987/sunandan-portfolio',accent:'#f472b6',visual:'cube'}]
 
 function ProjectVisual({type}){return <div className={`visual ${type}`}>{type==='phone'&&<div className="device"><i/><b>Practice<br/>with intent.</b><span>Begin a mock</span></div>}{type==='chart'&&<div className="screen"><small>Salary intelligence</small><div className="bars"><i/><i/><i/><i/><i/><i/></div><strong>+ 24.8%</strong></div>}{type==='cube'&&<div className="cube3d"><i/><i/><i/><i/><i/><i/></div>}</div>}
 function App(){
